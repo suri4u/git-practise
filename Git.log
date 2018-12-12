@@ -8,4 +8,5 @@ which git			-installation path of git
 			Git Architecture
 		     ---------------------
 git clone path		-to connect remote repository
-
+git add file name 	-to move file to index area from workspace
+git commit -m "comment"	-to move file from staging area/index to local repositry
