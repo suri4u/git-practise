@@ -1,0 +1,11 @@
+.log
+sudo apt-get update 		-to update paths or packages of git 
+sudo apt-get install git 	-to intall git
+git -- version			-to known version of git
+sudo apt-get remove git		-to remove git
+which git			-installation path of git
+----------------------------------------------------------------------
+			Git Architecture
+		     ---------------------
+git clone path		-to connect remote repository
+
