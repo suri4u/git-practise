@@ -10,3 +10,4 @@ which git			-installation path of git
 git clone path		-to connect remote repository
 git add file name 	-to move file to index area from workspace
 git commit -m "comment"	-to move file from staging area/index to local repositry
+git push		-to push file from local repository to remote repository
