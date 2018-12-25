@@ -15,7 +15,12 @@ sixth
 heloooooooooooooooooooooooooooooooooooooooooooo
 i
 love you
+<<<<<<< HEAD
 i=10
+=======
+i=20
+
+>>>>>>> maste1
 
 
 
