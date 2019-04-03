@@ -11,14 +11,4 @@ fourth commit to remote repository
 fifth
 sixth
 
-
-heloooooooooooooooooooooooooooooooooooooooooooo
-i
-love you
-
-
-
-
-
-
-
+seventh
