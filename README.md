@@ -1,44 +1,53 @@
-sfdfdgdg
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+# Build scan quickstart
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+<img src="http://bit.ly/2JSSCT0" align="right" width="280" />
 
----
+This is an example project that you can use to experience [build scans][gradle.com].
 
-## Edit a file
+It is a small Java project that has the [Gradle Build Scan Plugin][plugin] already applied.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+## Create a build scan
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Follow these simple steps to create a build scan:
 
----
+1. Clone this project
+1. Run `./gradlew build --scan`
+1. Agree to the [Terms of Service][terms-of-service] on the command line
 
-## Create a file
+The build should end with something similar to:
 
-Next, you’ll add a new file to this repository.
+    Publishing build scan...
+    https://gradle.com/s/ria2s2x5oaazq
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+Follow the green link shown at the end of the build to view your build scan.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+Note: If you run a build without the `--scan` flag, no build scan will be created and
+no information will be sent.
 
----
+## Experiment with build scans
 
-## Clone a repository
+Create different kinds of build scans by locally modifying this quickstart project. Here are some ideas:
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+- Edit `src/main/java/example/Example.java` to introduce compile errors
+- Edit `src/test/java/example/ExampleTest.java` to introduce test failures
+- Add more dependencies, more plugins, and more projects
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+Alternatively, enable one of your own builds to produce build scans by following the [step-by-step instructions][instructions].
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+## Learn more
+
+Read the [Gradle Build Scan Plugin User Manual][manual] to learn more about build scans and the build scan plugin.
+
+## Need help?
+
+Talk to us on the [Gradle forum][gradle-forum].
+
+If you are completely new to the Gradle Build Tool, start [here][gradle-download].
+
+[gradle-download]: https://gradle.org/install/
+[plugin]: https://docs.gradle.com/build-scan-plugin/
+[gradle.com]: https://www.gradle.com
+[terms-of-service]: https://gradle.com/terms-of-service
+[instructions]: https://scans.gradle.com/
+[gradle-forum]: https://discuss.gradle.org/c/help-discuss/scans
+[manual]: https://docs.gradle.com/build-scan-plugin/
