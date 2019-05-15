@@ -13,3 +13,4 @@ git commit -m "comment"	-to move file from staging area/index to local repositry
 git push		-to push file from local repository to remote repository
 git pull
 xg
+ookln
