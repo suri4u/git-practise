@@ -1383,8 +1383,7 @@ Scripts\pip.exe install ..\..\mimictron_rpa-21.1.1-py3-none-any
 =======================================================
   zzzz
 
-psql -h holmes-qc-psql.cluster-cphsfuoxfefg.us-east-1.rds.amazonaws.com -p 5432 -U postgres_rw -d holmes
-psql -h holmes-qc-psql.cluster-cphsfuoxfefg.us-east-1.rds.amazonaws.com -p 5432 -U postgres_rw -d holmes
+
 
 
 
